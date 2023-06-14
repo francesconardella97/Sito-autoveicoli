@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', [app\Http\Controllers\PublicController::class, 'homepage'])->name('homepage');
+Route::get('/', [App\Http\Controllers\PublicController::class, 'homepage'])->name('homepage');
