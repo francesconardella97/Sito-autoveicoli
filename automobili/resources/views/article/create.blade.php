@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="subctitle" class="form-label">Sottotilo:</label>
-                        <input name="subctitle" type="email" class="form-control" id="subctitle" value="{{ old('subctitle') }}">
+                        <input name="subctitle" type="subctitle" class="form-control" id="subctitle" value="{{ old('subctitle') }}">
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine:</label>

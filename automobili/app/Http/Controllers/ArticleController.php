@@ -19,7 +19,8 @@ class ArticleController extends Controller
 
     public function index()
     {
-        //
+        $articles = Article::orderBy('created_at', 'desc')->get();
+        return view('article.index', compact('articles'));
     }
 
     /**
@@ -37,7 +38,7 @@ class ArticleController extends Controller
     {
         $request->validate([
             'title' => 'required|unique:articles|min:5',
-            'subtitle' => 'required|unique:articles|min:5',
+            'subtitle' => 'required|unique:articles|min:10',
             'body' => 'required|min:10',
             'image' => 'image|required',
             'category' => 'required',
@@ -61,7 +62,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        return view('article.show', compact('article'));
     }
 
     /**

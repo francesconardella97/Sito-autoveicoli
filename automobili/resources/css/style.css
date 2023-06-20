@@ -1,0 +1,10 @@
+.image{
+    background: url('/public/media/immagini.webp') fixed ;
+    background-size: cover;    
+    height: 800px;
+}
+
+.logo{
+    height: 60px;
+    width: 100px;
+}
